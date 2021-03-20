@@ -1,0 +1,263 @@
+* {
+    font-family: Arial;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.header_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo,
+.logo a{
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 25px;
+    font-weight: bolder;   
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+nav a:hover{
+    background-color: #39aae1;
+    color: white;
+}
+#imgFundo{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.banner_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    flex-direction: column;
+}
+.banner_head{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.banner_head h1{
+    color: white;
+    font-family: cursive;
+    font-size: 50px;
+    text-shadow: 2px -2px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner_head h2{
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px -2px #555555;
+    margin: 0;
+    margin-top: 30px;
+    max-width: 350px;
+}
+#geral{
+    display: flex;
+    justify-content: center;
+}
+.geral_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.titulo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.title_text{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.title_bar{
+    margin-top: 5px;
+    width: 70px;
+    height: 3px;
+    background-color: #39aae1;
+    margin-left: 10px;
+}
+.artigos_body{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex: 1;
+    min-width: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+article a{
+    text-decoration: none;
+}
+article .artigo_foto img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+article .artigo_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-family: cursive;
+    font-size: 22px;
+}
+article .resumo{
+    font-size: 14px;
+    color:#5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.artigos_body{
+    font-size: 14px;
+    color:#5c5c5c;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-around;
+}
+.rodape_flex{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    flex-direction: column;
+}
+.rodape_menu{
+    display: flex;
+    height: 100px;   
+}
+.rm1,
+.rm2,
+.rm3 {
+    flex: 2;
+    color: #FFFFFF;
+    padding: 20PX;
+}
+.rm1{
+    background-color:  #9b9999;
+}
+.rm2{
+    background-color:  #706f6f;
+}
+.rm3{
+    background-color:  #555555;
+}
+.rm_title{
+    font-size: 21px;
+}
+.rm_text{
+    font-size: 12px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.rodape_copy{
+    border-top: 1px solid #2c2c2c;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 13px;
+    margin-top: 30px;
+    text-align: center;
+}
+.rodape_menu a{
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.menu_mob{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.menu_linha{
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media(max-width:680px){
+    .header_flex{
+        flex-direction: row;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    .menu_mob{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    #imgFundo{
+        height: 250px;
+    }
+    .banner_head{
+        padding: 20px;
+    }
+    .banner_head h1{
+        font-size: 25px;
+    }
+    .banner_head h2{
+        font-size: 15px;
+    }
+    .banner_flex,
+    .geral_flex,
+    .rodape_flex{
+        flex-direction: column;
+    }
+    #geral section{
+        padding: 20px;
+    }
+    .rodape_menu{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+}
